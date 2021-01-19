@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
-* Студент: [Alexandr Karabanov](https://up.htmlacademy.ru/htmlcss/30/user/1564333).
-* Наставник: `Неизвестно`.
+* Студент: [Alexandr ✍ Karabanov](https://up.htmlacademy.ru/htmlcss/30/user/1564333).
+* Наставник: [Irina 🎓 Malinovskaya](https://htmlacademy.ru/profile/irina-malinovskaya).
 
 ---
 
