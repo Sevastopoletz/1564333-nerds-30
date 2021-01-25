@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Дизайн-студия «Нёрдс»: Каталог готовых шаблонов</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#"><img src="img/nerds-logo.svg" alt="Логотип дизайн-студии «Nerds»" width="160" height="65"></a>
+        <ul>
+          <li><a href="#">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
+          <li><a href="#">Корзина</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Магазин готовых шаблонов</h1>
+        <section>
+          <h2>Фильтр шаблонов</h2>
+          <form action="#" method="get">
+            <fieldset>
+              <legend>Стоимость:</legend>
+                <div>
+                  <input type="range" name="worth" value="5000" min="0" max="15000" step="1000">
+                </div>
+                <div>
+                  <label>От&nbsp;<input type="text" name="min-price" value="0"></label>
+                  <label>До&nbsp;<input type="text" name="max-price" value="15000"></label>
+                </div>
+            </fieldset>
+            <fieldset>
+              <legend>Сетка:</legend>
+              <ul>
+              <li>
+                <input type="radio" name="grid" id="filter-adaptive" checked>
+                <label for="filter-adaptive">Адаптивная</label>
+              </li>
+              <li>
+                <input type="radio" name="grid" id="filter-fixed">
+                <label for="filter-fixed">Фиксированная</label>
+              </li>
+              <li>
+                <input type="radio" name="grid" id="filter-elastic">
+                <label for="filter-elastic">Резиновая</label>
+              </li>
+            </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Особенности:</legend>
+              <ul>
+                <li>
+                  <input type="checkbox" name="slider" id="filter-slider" checked>
+                  <label for="filter-slider">Слайдер</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="advantages-module" id="filter-advantages-module">
+                  <label for="filter-advantages-module">Блок преимуществ</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="news" id="filter-news" checked>
+                  <label for="filter-news">Новости</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="gallery" id="filter-gallery">
+                  <label for="filter-gallery">Галерея</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="cart" id="filter-cart">
+                  <label for="filter-cart">Корзина</label>
+                </li>
+              </ul>
+            </fieldset>
+            <button type="submit">ПОКАЗАТЬ</button>
+          </form>
+        </section>
+
+        <section>
+          <h2>Каталог шаблонов</h2>
+            <div>
+              <p>Сортировать:</p>
+              <ul>
+                <li><a href="#">ПО ЦЕНЕ</a></li>
+                <li><a href="#">ПО ТИПУ</a></li>
+                <li><a href="#">ПО НАЗВАНИЮ</a></li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <li>
+                  <a href="#">
+                    <h3>Туристический городок Седона</h3>
+                    <img src="img/catalog/catalog-sedona-1.png" alt="превью Седона" width="359" height="578">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <h3>Барбершоп Бородинский</h3>
+                    <img src="img/catalog/catalog-borodinski-1.png" alt="превью Бородинский" width="358" height="578">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <h3>Курсы А Плюс</h3>
+                    <img src="img/catalog/catalog-aplus-1.png" alt="превью А Плюс" width="359" height="578">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <h3>Приложение Пинк</h3>
+                    <img src="img/catalog/catalog-pink-1.png" alt="превью Пинк" width="358" height="578">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <h3>Вязаные штуки Мишка</h3>
+                    <img src="img/catalog/catalog-mishka-1.png" alt="превью Мишка" width="359" height="578">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <h3>Крафтовый квас Кваст</h3>
+                    <img src="img/catalog/catalog-kvast-1.png" alt="превью Кваст" width="359" height="578">
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <li>
+                  <a>1</a>
+                </li>
+                <li>
+                  <a href="#">2</a>
+                </li>
+                <li>
+                  <a href="#">3</a>
+                </li>
+                <li>
+                  <a href="#">Следующая</a>
+                </li>
+              </ul>
+          </div>
+        </section>
+
+        <footer>
+          <!--Карта-->
+          <div>
+            <p><b>NЁRDS DESIGN STUDIO</b></p>
+            <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            <p>тел.<a href="tel:+78122757575">+7 (812) 275-75-75</a></p>
+            <a href="#">НАПИШИТЕ НАМ</a>
+          </div>
+          <ul>
+            <li><a href="#"><img src="#" alt="Вконтакте"></a></li>
+            <li><a href="#"><img src="#" alt="Фейсбук"></a></li>
+            <li><a href="#"><img src="#" alt="Инстаграм"></a></li>
+          </ul>
+          <div>
+            <p>Давайте дружить, это выгодно!</p>
+            <p>Скидка 10% для друзей из социальных сетей.</p>
+          </div>
+          </footer>
+    </main>
+  </body>
+</html>
