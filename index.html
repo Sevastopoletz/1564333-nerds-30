@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Дизайн-студия «Нёрдс»</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&;subset=latin,cyrillic;display=swap">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
     <link rel="manifest" href="/manifest.webmanifest">
   </head>
-  <body>
-    <header>
-      <nav>
-        <a href="#"><img src="img/nerds-logo.svg" alt="Логотип дизайн-студии «Nerds»" width="160" height="65"></a>
-        <ul>
+  <body class="page-body">
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo" href="#"><img src="img/nerds-logo.svg" alt="Логотип дизайн-студии «Nerds»" width="160" height="65"></a>
+        <ul class="site-navigation">
           <li><a href="#">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
           <li><a href="catalog.html">Магазин</a></li>
@@ -21,96 +24,100 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="container">
       <h1>Сайт дизайн-студии «Nerds»</h1>
-        <section>
+
+        <section class="services-heading">
           <h2>Описание услуг</h2>
-          <p><strong>Долго, дорого, скрупулезно.</strong></p>
+          <p class="primary-slogan">Долго, дорого, скрупулезно.</p>
           <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-          <a href="#">Узнать больше</a>
+          <a class="button" href="#">Узнать больше</a>
         </section>
 
-        <section>
+        <section class="services-descripton">
           <h2>Список услуг</h2>
-          <ul>
-            <li>
+          <ul class="services-list">
+            <li class="services-item">
               <img src="img/index-websites.jpg" alt="Веб-сайты" width="300" height="146">
               <h2>Веб-сайты</h2>
               <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-              <a href="#">Заказать</a>
+              <a class="button" href="#">Заказать</a>
             </li>
-            <li>
+            <li class="services-item">
               <img src="img/index-apps.jpg" alt="Приложения" width="300" height="146">
               <h2>Приложения</h2>
               <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-              <a href="#">Заказать</a>
+              <a class="button" href="#">Заказать</a>
             </li>
-            <li>
+            <li class="services-item">
               <img src="img/index-presentations.jpg" alt="Презентации" width="300" height="146">
               <h2>Презентации</h2>
               <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-              <a href="#">Заказать</a>
+              <a class="button" href="#">Заказать</a>
             </li>
           </ul>
         </section>
 
-        <section>
+        <section class="about-company">
           <h2>Информация о компании</h2>
-          <p>Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
+          <p class="secondary-slogan">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
           <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
           <p><b>Выполняем заказы на разработку:</b></p>
-            <ul>
-              <li>Веб-сайтов любой сложности</li>
-              <li>Мобильных приложений для iOS и Android</li>
-              <li>Слайдшоу и видео для корпоративных презентаций</li>
+            <ul class="about-list">
+              <li class="about-item">Веб-сайтов любой сложности</li>
+              <li class="about-item">Мобильных приложений для iOS и Android</li>
+              <li class="about-item">Слайдшоу и видео для корпоративных презентаций</li>
             </ul>
         </section>
 
-        <section>
+        <section class="stats-company">
           <h2>Статистика компании</h2>
           <img src="img/nerds-illustration-1.png" alt="Логотип дизайн-студии «Nerds»" width="360" height="208">
-          <table>
-            <tr>
-              <th colspan="3"><b>с 2004 года Любим точность во всем:</b></th>
+          <table class="stats-table">
+            <tr class="stats-heading-row">
+              <th class="stats-heading-item" colspan="3"><b>с 2004 года Любим точность во всем:</b></th>
             </tr>
-            <tr>
-              <td>Уровень самоотдачи</td>
-              <td>Соблюдение сроков</td>
-              <td>Минимальная предоплата</td>
+            <tr class="stats-row">
+              <td class="stats-item">Уровень самоотдачи</td>
+              <td class="stats-item">Соблюдение сроков</td>
+              <td class="stats-item">Минимальная предоплата</td>
             </tr>
-            <tr>
-              <td>146 <sup>%</sup></td>
-              <td>100 <sup>%</sup></td>
-              <td>50 <sup>%</sup></td>
+            <tr class="stats-row">
+              <td class="stats-item">146 <sup>%</sup></td>
+              <td class="stats-item">100 <sup>%</sup></td>
+              <td class="stats-item">50 <sup>%</sup></td>
             </tr>
           </table>
         </section>
 
-        <section>
+        <section class="products-company">
           <h2>Проекты компании</h2>
-          <ul>
-            <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-ha.png" alt="HTML Academy" width="199" height="68"></a></li>
-            <li><a href="#"><img src="img/logo-barbershop.png" alt="Барбершоп Бородинский" width="209" height="90"></a></li>
-            <li><a href="#"><img src="img/logo-pink.png" alt="Приложение Пинк" width="185" height="52"></a></li>
-            <li><a href="#"><img src="img/logo-mishka.png" alt="Вязаные штуки Мишка" width="173" height="84"></a></li>
+          <ul products-list>
+            <li products-item><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-ha.png" alt="HTML Academy" width="199" height="68"></a></li>
+            <li products-item><a href="#"><img src="img/logo-barbershop.png" alt="Барбершоп Бородинский" width="209" height="90"></a></li>
+            <li products-item><a href="#"><img src="img/logo-pink.png" alt="Приложение Пинк" width="185" height="52"></a></li>
+            <li products-item><a href="#"><img src="img/logo-mishka.png" alt="Вязаные штуки Мишка" width="173" height="84"></a></li>
           </ul>
         </section>
 
         <!--Карта-->
-        <div>
+
+        <div class="contacts">
           <p><b>NЁRDS DESIGN STUDIO</b></p>
           <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <p>тел.<a href="tel:+78122757575">+7 (812) 275-75-75</a></p>
-          <a href="#">Напишите нам</a>
+          <p>тел.<a class="contacts-phone" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
+          <a class="button" href="#">Напишите нам</a>
         </div>
 
-        <footer>
-          <ul>
-            <li><a href="#"><img src="#" alt="Вконтакте"></a></li>
-            <li><a href="#"><img src="#" alt="Фейсбук"></a></li>
-            <li><a href="#"><img src="#" alt="Инстаграм"></a></li>
+        <!--Напишите нам-->
+
+        <footer class="page-footer">
+          <ul social-links-list>
+            <li social-links-button><a href="#"><img src="#" alt="Вконтакте"></a></li>
+            <li social-links-button><a href="#"><img src="#" alt="Фейсбук"></a></li>
+            <li social-links-button><a href="#"><img src="#" alt="Инстаграм"></a></li>
           </ul>
-          <div>
+          <div footer-discount>
             <p>Давайте дружить, это выгодно!</p>
             <p>Скидка 10% для друзей из социальных сетей.</p>
           </div>

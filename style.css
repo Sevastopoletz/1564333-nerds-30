@@ -1,0 +1,123 @@
+/* variables */
+:root {
+  --primary-text-color: #000000;
+  --secondary-text-color: #283136;
+
+  --basic-white: #FFF;
+  --basic-light-grey: #EEE;
+
+  --button-red: #FB565A;
+  --button-green: #00CA74;
+  --button-yellow: #EFC849;
+
+  --modal-grey: #666;
+  --range-grey: #ABABAB;
+  --filter-grey: #4D4D4D;
+  --social-link-grey: #E1E1E1;
+}
+
+/* global */
+.page-body {
+  min-width: 1440px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--primary-text-color);
+  background-color: var(--basic-white);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  margin: 0;
+  background-color: var(--basic-light-grey);
+}
+
+/* navigation */
+.main-navigation {
+  margin: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--primary-text-color);
+  background-color: var(--basic-light-grey);
+}
+
+.main-header-logo,
+.site-navigation a {
+  color: var(--primary-text-color);
+
+}
+
+.site-navigation {
+  margin: 0;
+  padding: auto;
+  list-style: none;
+}
+
+.main-header-logo:hover {
+  opacity: 70%;
+}
+
+.site-navigation a:hover {
+  color: var(--button-red);
+}
+
+.main-header-logo:active,
+.site-navigation a:active {
+  color: var(--primary-text-color);
+  opacity: 30%;
+}
+
+/* services-header */
+.services-heading {
+  background-color: var(--basic-light-grey)
+}
+
+.services-heading h2 {
+  margin-top: 0;
+}
+
+.primary-slogan {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.services-heading p {
+  color: var(--secondary-text-color);
+}
+
+/* services-descripton */
+.services-list {
+  list-style: none;
+}
+
+.services-descripton h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.services-item p {
+  color: var(--secondary-text-color);
+}
+
+/* about-company */
+.secondary-slogan {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+}
