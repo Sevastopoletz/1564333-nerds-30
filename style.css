@@ -6,14 +6,21 @@
   --basic-white: #FFF;
   --basic-light-grey: #EEE;
 
-  --button-red: #FB565A;
-  --button-green: #00CA74;
-  --button-yellow: #EFC849;
+  --button-red: #E74246;
+  --button-light-red: #FB565A;
+  --button-dark-red: #D7373B;
+  --button-green: #00BC6C;
+  --button-light-green: #00CA74;
+  --button-dark-green: #00AA62;
+  --button-yellow: #EAB534;
+  --button-light-yellow: #EFC849;
+  --button-dark-yellow: #E5A722;
 
   --modal-grey: #666;
   --range-grey: #ABABAB;
   --filter-grey: #4D4D4D;
   --social-link-grey: #E1E1E1;
+  --footer-grey: #444;
 }
 
 /* global */
@@ -116,8 +123,117 @@ h1 {
 }
 
 /* about-company */
+.about-company,
+.stats-company {
+  color: var(--secondary-text-color);
+}
+
+.stats-heading-item,
+.stats-item {
+  color: var(--primary-text-color);
+}
+
 .secondary-slogan {
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
+  color: var(--primary-text-color);
+}
+
+.bold-list-heading {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.stats-item {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 64px;
+}
+
+.stats-item span {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 40px;
+  vertical-align: super;
+}
+
+/* products */
+.products-list {
+  list-style: none;
+}
+
+/* contacts */
+.contacts-heading {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.contacts p:not(.contacts-heading) {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+/* footer */
+.social-links-list {
+  list-style: none;
+}
+
+.footer-discount-heading {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.footer-discount p:not(.footer-discount-heading) {
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--footer-grey);
+}
+
+/* button */
+.button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  color: var(--basic-white);
+  background-color: var(--button-light-red);
+  border-radius: 3px;
+}
+
+.button:hover {
+  background-color: var(--button-red);
+}
+
+.button:active {
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  background-color: var(--button-dark-red);
+  }
+
+.button-green {
+  background-color: var(--button-light-green);
+}
+
+.button-green:hover {
+  background-color: var(--button-green);
+}
+
+.button-green:active {
+  background-color: var(--button-dark-green);
+}
+
+.button-yellow {
+  background-color: var(--button-light-yellow);
+}
+
+.button-yellow:hover {
+  background-color: var(--button-yellow);
+}
+
+.button-yellow:active {
+  background-color: var(--button-dark-yellow);
 }
