@@ -21,6 +21,11 @@
   --filter-grey: #4D4D4D;
   --social-link-grey: #E1E1E1;
   --footer-grey: #444;
+
+  --input-inactive: #D7DCDE;
+  --input-hover: #B4B9BB;
+  --input-focus: #000000;
+  --input-unvalid: #E74246;
 }
 
 /* global */
@@ -48,6 +53,52 @@ img {
 h1 {
   margin: 0;
   background-color: var(--basic-light-grey);
+}
+
+/* button */
+.button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  color: var(--basic-white);
+  background-color: var(--button-light-red);
+  border-radius: 3px;
+}
+
+.button:hover {
+  background-color: var(--button-red);
+}
+
+.button:active {
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  background-color: var(--button-dark-red);
+  }
+
+.button-green {
+  background-color: var(--button-light-green);
+}
+
+.button-green:hover {
+  background-color: var(--button-green);
+}
+
+.button-green:active {
+  background-color: var(--button-dark-green);
+}
+
+.button-yellow {
+  background-color: var(--button-light-yellow);
+}
+
+.button-yellow:hover {
+  background-color: var(--button-yellow);
+}
+
+.button-yellow:active {
+  background-color: var(--button-dark-yellow);
 }
 
 /* navigation */
@@ -168,6 +219,7 @@ h1 {
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
+  text-transform: uppercase;
 }
 
 .contacts p:not(.contacts-heading) {
@@ -175,9 +227,60 @@ h1 {
   line-height: 18px;
 }
 
+.contacts-phone {
+  color: inherit;
+}
+
+/*response-popup*/
+.response-popup {
+  background-color: var(--basic-white);
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.response-heading {
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 53px;
+}
+
+.response label {
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.response-form input[name="response-username"] {
+  text-transform: capitalize;
+}
+
+.response input {
+  font: inherit;
+  border: 2px solid var(--input-inactive);
+}
+
+.response input:hover {
+  border: 2px solid var(--input-hover);
+}
+
+}
+.response input:focus {
+  border: 2px solid var(--input-focus);
+}
+
+.button-response {
+  border: 0;
+  outline: 0;
+}
+
 /* footer */
 .social-links-list {
   list-style: none;
+}
+
+.social-links-button {
+  background: linear-gradient(0deg, #E1E1E1, #E1E1E1), #FFFFFF;
 }
 
 .footer-discount-heading {
@@ -190,50 +293,4 @@ h1 {
   font-size: 16px;
   line-height: 22px;
   color: var(--footer-grey);
-}
-
-/* button */
-.button {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  text-align: center;
-  vertical-align: middle;
-  color: var(--basic-white);
-  background-color: var(--button-light-red);
-  border-radius: 3px;
-}
-
-.button:hover {
-  background-color: var(--button-red);
-}
-
-.button:active {
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-  background-color: var(--button-dark-red);
-  }
-
-.button-green {
-  background-color: var(--button-light-green);
-}
-
-.button-green:hover {
-  background-color: var(--button-green);
-}
-
-.button-green:active {
-  background-color: var(--button-dark-green);
-}
-
-.button-yellow {
-  background-color: var(--button-light-yellow);
-}
-
-.button-yellow:hover {
-  background-color: var(--button-yellow);
-}
-
-.button-yellow:active {
-  background-color: var(--button-dark-yellow);
 }
