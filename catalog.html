@@ -4,79 +4,84 @@
     <meta charset="utf-8">
     <title>Дизайн-студия «Нёрдс»: Каталог готовых шаблонов</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&;subset=latin,cyrillic;display=swap">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
     <link rel="manifest" href="/manifest.webmanifest">
   </head>
-  <body>
+
+  <body class="page-body">
+
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html"><img src="img/nerds-logo.svg" alt="Логотип дизайн-студии «Nerds»" width="160" height="65"></a>
         <ul class="site-navigation">
-          <li><a href="#">Студия</a></li>
+          <li><a href="index.html">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
           <li><a href="#">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
-          <li><a href="#">Корзина</a></li>
         </ul>
+        <div class="cart">
+          <a href="#">Корзина</a>
+        </div>
       </nav>
     </header>
+
     <main>
-      <h1>Магазин готовых шаблонов</h1>
+      <h1 class="catalog-header">Магазин готовых шаблонов</h1>
         <section>
           <h2>Фильтр шаблонов</h2>
-          <form action="https://echo.htmlacademy.ru/" method="get">
+          <form class="filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset>
-              <legend>Стоимость:</legend>
-                <div>
+              <legend class="filter-heading">Стоимость:</legend>
+                <div class="worth-range">
                   <input type="range" name="worth" value="5000" min="0" max="15000" step="1000">
                 </div>
-                <div>
+                <div class="filter-cost">
                   <label>От&nbsp;<input type="text" name="min-price" value="0"></label>
                   <label>До&nbsp;<input type="text" name="max-price" value="15000"></label>
                 </div>
             </fieldset>
             <fieldset>
-              <legend>Сетка:</legend>
+              <legend class="filter-heading">Сетка:</legend>
               <ul>
-              <li>
-                <input type="radio" name="grid" id="filter-adaptive" checked>
+              <li class="filter-option">
+                <input class="filter-input-radio" type="radio" name="grid" id="filter-adaptive" checked>
                 <label for="filter-adaptive">Адаптивная</label>
               </li>
-              <li>
-                <input type="radio" name="grid" id="filter-fixed">
+              <li class="filter-option">
+                <input class="filter-input-radio" type="radio" name="grid" id="filter-fixed">
                 <label for="filter-fixed">Фиксированная</label>
               </li>
-              <li>
-                <input type="radio" name="grid" id="filter-elastic">
+              <li class="filter-option">
+                <input class="filter-input-radio" type="radio" name="grid" id="filter-elastic">
                 <label for="filter-elastic">Резиновая</label>
               </li>
             </ul>
             </fieldset>
             <fieldset>
-              <legend>Особенности:</legend>
+              <legend class="filter-heading">Особенности:</legend>
               <ul>
-                <li>
-                  <input type="checkbox" name="slider" id="filter-slider" checked>
+                <li class="filter-option">
+                  <input class="filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
                   <label for="filter-slider">Слайдер</label>
                 </li>
-                <li>
-                  <input type="checkbox" name="advantages-module" id="filter-advantages-module">
+                <li class="filter-option">
+                  <input class="filter-input-checkbox" type="checkbox" name="advantages-module" id="filter-advantages-module">
                   <label for="filter-advantages-module">Блок преимуществ</label>
                 </li>
-                <li>
-                  <input type="checkbox" name="news" id="filter-news" checked>
+                <li class="filter-option">
+                  <input class="filter-input-checkbox" type="checkbox" name="news" id="filter-news" checked>
                   <label for="filter-news">Новости</label>
                 </li>
-                <li>
-                  <input type="checkbox" name="gallery" id="filter-gallery">
+                <li class="filter-option">
+                  <input class="filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
                   <label for="filter-gallery">Галерея</label>
                 </li>
-                <li>
-                  <input type="checkbox" name="cart" id="filter-cart">
+                <li class="filter-option">
+                  <input class="filter-input-checkbox" type="checkbox" name="cart" id="filter-cart">
                   <label for="filter-cart">Корзина</label>
                 </li>
               </ul>
@@ -87,8 +92,8 @@
 
         <section>
           <h2>Каталог шаблонов</h2>
-            <div>
-              <p>Сортировать:</p>
+            <div class="filter-sort">
+              <p class="filter-heading">Сортировать:</p>
               <ul>
                 <li><a href="#">По цене</a></li>
                 <li><a href="#">По типу</a></li>

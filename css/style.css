@@ -55,7 +55,6 @@
 
 /* global */
 .page-body {
-  min-width: 1440px;
   margin: 0;
   padding: 0;
   font-family: "Roboto", Arial, sans-serif;
@@ -163,6 +162,7 @@ h1 {
   opacity: 30%;
 }
 
+/*index*/
 /* services-header */
 .services-heading {
   background-color: var(--basic-light-grey)
@@ -237,6 +237,18 @@ h1 {
 /* products */
 .products-list {
   list-style: none;
+}
+
+.products-item {
+  opacity: 0.2;
+}
+
+.products-item:hover {
+  opacity: 1;
+}
+
+.products-item:active {
+  opacity: 0.1;
 }
 
 /* contacts */
@@ -318,4 +330,33 @@ h1 {
   font-size: 16px;
   line-height: 22px;
   color: var(--footer-grey);
+}
+
+
+/* catalog */
+.catalog-header {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+}
+
+/* filters */
+.filter-heading {
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.filter ul,
+.filter-sort ul {
+  list-style: none;
+}
+
+.filter-cost label {
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
 }
