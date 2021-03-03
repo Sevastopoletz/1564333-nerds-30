@@ -40,6 +40,8 @@
   --button-yellow: #EAB534;
   --button-light-yellow: #EFC849;
   --button-dark-yellow: #E5A722;
+  --button-hover-grey: #DFDFDF;
+  --button-push-grey: #D5D5D5;
 
   --modal-grey: #666;
   --range-grey: #ABABAB;
@@ -123,6 +125,25 @@ h1 {
 
 .button-yellow:active {
   background-color: var(--button-dark-yellow);
+}
+
+.button-catalog-filter {
+  color: var(--primary-text-color);
+  text-transform: uppercase;
+  background-color: var(--basic-light-grey);
+  border: 0;
+  outline: 0;
+  border-radius: 3px;
+}
+
+.button-catalog-filter:hover {
+  background-color: var(--button-hover-grey);
+}
+
+.button-catalog-filter:active {
+  opacity: 0.3;
+  background-color: var(--button-push-grey);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
 /* navigation */
@@ -359,4 +380,26 @@ h1 {
   font-size: 16px;
   line-height: 22px;
   text-transform: uppercase;
+}
+
+.filter-option {
+  color: var(--secondary-text-color);
+  opacity: 0.4;
+}
+
+.filter-option:hover {
+  opacity: 1;
+}
+
+.filter-sort-option {
+  color: var(--primary-text-color);
+  opacity: 0.3;
+}
+
+.filter-sort-option:hover {
+  opacity:0.6;
+}
+
+.filter-sort-option:focus:active {
+  opacity: 1;
 }

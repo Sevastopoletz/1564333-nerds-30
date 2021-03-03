@@ -86,7 +86,7 @@
                 </li>
               </ul>
             </fieldset>
-            <button type="submit">Показать</button>
+            <button class="button button-catalog-filter" type="submit">Показать</button>
           </form>
         </section>
 
@@ -95,13 +95,13 @@
             <div class="filter-sort">
               <p class="filter-heading">Сортировать:</p>
               <ul>
-                <li><a href="#">По цене</a></li>
-                <li><a href="#">По типу</a></li>
-                <li><a href="#">По названию</a></li>
+                <li class="filter-sort-option"><a href="#">По цене</a></li>
+                <li class="filter-sort-option"><a href="#">По типу</a></li>
+                <li class="filter-sort-option"><a href="#">По названию</a></li>
               </ul>
               <ul>
-                <li><a href="#">По возрастанию</a></li>
-                <li><a href="#">По убыванию</a></li>
+                <li class="filter-sort-option"><a href="#">По возрастанию</a></li>
+                <li class="filter-sort-option"><a href="#">По убыванию</a></li>
               </ul>
             </div>
               <ul>
@@ -163,24 +163,26 @@
         </section>
 
         <!--Карта-->
-        <div>
-          <p><b>NЁRDS DESIGN STUDIO</b></p>
+        <div class="contacts">
+          <p class="contacts-heading">Nёrds design studio</p>
           <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <p>тел.<a href="tel:+78122757575">+7 (812) 275-75-75</a></p>
-          <a href="#">Напишите нам</a>
+          <p>тел.<a class="contacts-phone" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
+          <a class="button" href="#">Напишите нам</a>
         </div>
 
-        <footer>
-          <ul>
-            <li><a href="#"><img src="#" alt="Вконтакте"></a></li>
-            <li><a href="#"><img src="#" alt="Фейсбук"></a></li>
-            <li><a href="#"><img src="#" alt="Инстаграм"></a></li>
-          </ul>
-          <div>
-            <p>Давайте дружить, это выгодно!</p>
-            <p>Скидка 10% для друзей из социальных сетей.</p>
-          </div>
-          </footer>
     </main>
+
+      <footer class="page-footer">
+        <ul class="social-links-list">
+          <li class="social-links-button"><a href="#"><img src="img/icons/icon-vk.svg" alt="Вконтакте"></a></li>
+          <li class="social-links-button"><a href="#"><img src="img/icons/icon-fb.svg" alt="Фейсбук"></a></li>
+          <li class="social-links-button"><a href="#"><img src="img/icons/icon-insta.svg" alt="Инстаграм"></a></li>
+        </ul>
+        <div class="footer-discount">
+          <p class="footer-discount-heading">Давайте дружить, это выгодно!</p>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </footer>
+
   </body>
 </html>
