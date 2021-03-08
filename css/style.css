@@ -53,7 +53,6 @@
   --input-inactive: #D7DCDE;
   --input-hover: #B4B9BB;
   --input-focus: #000000;
-  --input-unvalid: #E74246;
 }
 
 /* global */
@@ -69,6 +68,7 @@
 }
 
 a {
+  color: var(--primary-text-color);
   text-decoration: none;
 }
 
@@ -81,6 +81,7 @@ h1 {
   margin: 0;
   background-color: var(--basic-light-grey);
 }
+
 
 /* button */
 .button {
@@ -129,7 +130,7 @@ h1 {
 }
 
 .button-catalog-filter,
-.catalog-pages-item a {
+.pagination-item a {
   color: var(--primary-text-color);
   text-transform: uppercase;
   background-color: var(--basic-light-grey);
@@ -139,22 +140,21 @@ h1 {
 }
 
 .button-catalog-filter:hover,
-.catalog-pages-item a:hover {
+.pagination-item a:hover {
   background-color: var(--button-hover-grey);
 }
 
 .button-catalog-filter:active,
-.catalog-pages-item a:active {
+.pagination-item a:active {
   opacity: 0.3;
   background-color: var(--button-push-grey);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
-.catalog-pages-item a:target {
+.pagination-item-current a {
+  background: rgba(0, 0, 0, 0.0001);
   border: 3px solid var(--button-pages-border);
-  background-color: var(--primary-text-color);
-  opacity: 0.0001;
-}
+  border-radius: 3px;}
 
 /* navigation */
 .main-navigation {
@@ -364,7 +364,20 @@ h1 {
 }
 
 .social-links-button {
-  background: linear-gradient(0deg, #E1E1E1, #E1E1E1), #FFFFFF;
+  background: linear-gradient(0deg, var(--social-link-grey), var(--social-link-grey)), var(--basic-white);
+}
+
+.social-links-button:hover {
+  background: linear-gradient(0deg, var(--button-red), var(--button-red)), var(--basic-white);
+}
+
+.social-links-button:active {
+  background: linear-gradient(0deg, var(--button-dark-red), var(--button-dark-red)), var(--basic-white);
+  box-shadow: 0px 3px 0px 0px #000101 10 % inset;
+}
+
+.social-links-button img:active {
+  opacity: 0.3;
 }
 
 .footer-discount-heading {
@@ -435,20 +448,28 @@ h1 {
   text-transform: uppercase;
 }
 
-.filter-option {
-  color: var(--secondary-text-color);
+.filter-option input {
+  color: var(--filter-grey);
   opacity: 0.4;
 }
 
-.filter-option:hover {
+.filter-option input:hover {
   opacity: 1;
 }
 
-.filter-option:disabled {
-  
+.filter-option input:disabled {
+  opacity: 0.1;
 }
 
-.filter-sort-option {
+.filter-option label {
+  color: var(--secondary-text-color);
+}
+
+.filter-option label:disabled {
+  opacity: 0.3;
+}
+
+.filter-sort-option a {
   color: var(--primary-text-color);
   opacity: 0.3;
 }
@@ -462,6 +483,6 @@ h1 {
 }
 
 /* catalog-navigation */
-.catalog-pages {
+.pagination-list {
   list-style: none;
 }
