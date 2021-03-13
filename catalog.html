@@ -14,24 +14,37 @@
 
   <body class="page-body">
 
+    <div class="header-bar">
     <header class="main-header">
-      <nav class="main-navigation">
-        <a class="main-header-logo" href="index.html"><img src="img/nerds-logo.svg" alt="Логотип дизайн-студии «Nerds»" width="160" height="65"></a>
-        <ul class="site-navigation">
-          <li><a href="index.html">Студия</a></li>
-          <li><a href="#">Клиенты</a></li>
-          <li><a href="#">Магазин</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-        <div class="cart">
-          <a href="#">Корзина</a>
+      <nav class="main-nav">
+        <div class="main-navigation-wrapper">
+          <a class="main-header-logo" href="#"><img src="img/nerds-logo.svg" alt="Логотип дизайн-студии «Nerds»" width="160" height="65"></a>
+          <ul class="site-nav">
+            <li class="site-nav-item"><a class="site-nav-link" href="#">Студия</a></li>
+            <li class="site-nav-item"><a class="site-nav-link" href="#">Клиенты</a></li>
+            <li class="site-nav-item"><a class="site-nav-link" href="catalog.html">Магазин</a></li>
+            <li class="site-nav-item"><a class="site-nav-link" href="#">Контакты</a></li>
+          </ul>
+          <div class="cart">
+            <a class="cart-link" href="#">Корзина</a>
+          </div>
+          <!-- <section class="slider">
+            <h2>Слайдер дизайн-студии «Nerds»</h2>
+              <div class="slider-wrapper">
+                <div class="slider-item">
+
+                </div>
+              </div>
+          </section> -->
         </div>
       </nav>
     </header>
+    </div>
 
-    <main>
+    <main class="container">
       <h1 class="catalog-header">Магазин готовых шаблонов</h1>
-        <section>
+      <div class="catalog-container">
+        <section class="filter-container">
           <h2>Фильтр шаблонов</h2>
           <form class="filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset>
@@ -108,56 +121,33 @@
             <div class="catalog">
               <ul class="catalog-list">
                 <li class="catalog-item">
-                  <div>
-                    <a href="#"><h3>Туристический городок Седона</h3>
-                    <img src="img/catalog/catalog-sedona-1.jpg" alt="превью Седона" width="358" height="577"></a>
+                  <h3>Туристический городок Седона</h3>
+                    <img src="img/catalog/catalog-sedona-1.jpg" alt="превью Седона" width="358" height="577">
                     <div class="catalog-item-popup">
-                      <p class="catalog-item-popup-heading">Sedona</p>
+                      <h3 class="catalog-item-popup-heading">Sedona</h3>
                       <p class="catalog-item-popup-descripton">Информационный сайт для туристов</p>
                       <a class="button" href="#">9 900 &#8381;</a>
-
                     </div>
-                  </div>
                 </li>
                 <li class="catalog-item">
-                  <div>
-                    <a href="#">
-                      <h3>Барбершоп Бородинский</h3>
-                      <img src="img/catalog/catalog-barbershop-1.jpg" alt="превью Бородинский" width="358" height="578">
-                    </a>
-                  </div>
+                  <h3>Барбершоп Бородинский</h3>
+                  <img src="img/catalog/catalog-barbershop-1.jpg" alt="превью Бородинский" width="358" height="578">
                 </li>
                 <li class="catalog-item">
-                  <div>
-                    <a href="#">
-                      <h3>Курсы А Плюс</h3>
-                      <img src="img/catalog/catalog-aplus-1.jpg" alt="превью А Плюс" width="358" height="578">
-                    </a>
-                  </div>
+                  <h3>Курсы А Плюс</h3>
+                  <img src="img/catalog/catalog-aplus-1.jpg" alt="превью А Плюс" width="358" height="578">
                 </li>
                 <li class="catalog-item">
-                  <div>
-                    <a href="#">
-                      <h3>Приложение Пинк</h3>
-                      <img src="img/catalog/catalog-pink-1.jpg" alt="превью Пинк" width="358" height="578">
-                    </a>
-                  </div>
+                  <h3>Приложение Пинк</h3>
+                  <img src="img/catalog/catalog-pink-1.jpg" alt="превью Пинк" width="358" height="578">
                 </li>
                 <li class="catalog-item">
-                  <div>
-                    <a href="#">
-                      <h3>Вязаные штуки Мишка</h3>
-                      <img src="img/catalog/catalog-mishka-1.jpg" alt="превью Мишка" width="358" height="578">
-                    </a>
-                  </div>
+                  <h3>Вязаные штуки Мишка</h3>
+                  <img src="img/catalog/catalog-mishka-1.jpg" alt="превью Мишка" width="358" height="578">
                 </li>
                 <li class="catalog-item">
-                  <div>
-                    <a href="#">
-                      <h3>Крафтовый квас Кваст</h3>
-                      <img src="img/catalog/catalog-kvast-1.jpg" alt="превью Кваст" width="358" height="578">
-                    </a>
-                  </div>
+                  <h3>Крафтовый квас Кваст</h3>
+                  <img src="img/catalog/catalog-kvast-1.jpg" alt="превью Кваст" width="358" height="578">
                 </li>
               </ul>
               <ul class="pagination-list">
@@ -176,7 +166,7 @@
               </ul>
             </div>
         </section>
-
+      </div>
         <!--Карта-->
         <div class="contacts">
           <p class="contacts-heading">Nёrds design studio</p>
@@ -187,17 +177,19 @@
 
     </main>
 
-      <footer class="page-footer">
+    <footer class="page-footer">
+      <div class="container container-footer">
         <ul class="social-links-list">
-          <li class="social-links-button"><a href="#"><img src="img/icons/icon-vk.svg" alt="Вконтакте"></a></li>
-          <li class="social-links-button"><a href="#"><img src="img/icons/icon-fb.svg" alt="Фейсбук"></a></li>
-          <li class="social-links-button"><a href="#"><img src="img/icons/icon-insta.svg" alt="Инстаграм"></a></li>
+          <li class="social-links-item"><a class="social-links-button social-links-button-vk" href="#"></a></li>
+          <li class="social-links-item"><a class="social-links-button social-links-button-fb" href="#"></a></li>
+          <li class="social-links-item"><a class="social-links-button social-links-button-insta" href="#"></a></li>
         </ul>
         <div class="footer-discount">
           <p class="footer-discount-heading">Давайте дружить, это выгодно!</p>
           <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
-      </footer>
+      </div>
+    </footer>
 
   </body>
 </html>
