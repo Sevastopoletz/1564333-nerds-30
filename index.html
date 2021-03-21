@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&;subset=latin,cyrillic;display=swap">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
@@ -28,14 +29,6 @@
           <div class="cart">
             <a class="cart-link" href="#">Корзина</a>
           </div>
-          <!-- <section class="slider">
-            <h2>Слайдер дизайн-студии «Nerds»</h2>
-              <div class="slider-wrapper">
-                <div class="slider-item">
-
-                </div>
-              </div>
-          </section> -->
         </div>
       </nav>
       </div>
@@ -43,11 +36,48 @@
 
     <main>
       <h1 class="visually-hidden">Сайт дизайн-студии «Nerds»</h1>
-        <section class="services-heading">
-          <h2 class="visually-hidden">Описание услуг</h2>
-          <p class="primary-slogan">Долго, дорого, скрупулезно.</p>
-          <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-          <a class="button learn-more-button" href="#">Узнать больше</a>
+        <section class="slider">
+          <h2 class="visually-hidden">Слайдшоу Nёrds</h2>
+            <div class="container">
+              <div class="slider-wrapper">
+      					<ul class="slider-list">
+      						<li class="slider-item slide-1 slide-current">
+      							<div class="slide-wrapper">
+      								<p class="primary-slogan">Долго, дорого, скрупулезно.</p>
+      								<p class="primary-slogan-description">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+      								<a class="learn-more-button button" href="#">Узнать больше</a>
+      							</div>
+      						</li>
+
+      						<li class="slider-item slide-2">
+      							<div class="slide-wrapper">
+      								<p class="primary-slogan">Любим математику как ни кто другой</p>
+      								<p class="primary-slogan-description">Ни какого креатива, только математические формулы для расчета идеальных пропорций</p>
+      								<a class="learn-more-button button" href="#">Узнать больше</a>
+      							</div>
+      						</li>
+
+      						<li class="slider-item slide-3">
+      							<div class="slide-wrapper">
+      								<p class="primary-slogan">Только ночь, только хардкор</p>
+      								<p class="primary-slogan-description">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+      								<a class="learn-more-button button" href="#">Узнать больше</a>
+      							</div>
+      						</li>
+      					</ul>
+      					<div class="slider-controls">
+      						<button class="slider-controls-button" type="button" aria-label="Первый">
+      							<span class="current"></span>
+      						</button>
+      						<button class="slider-controls-button" type="button" aria-label="Второй">
+      							<span></span>
+      						</button>
+      						<button class="slider-controls-button" type="button" aria-label="Третий">
+      							<span></span>
+      						</button>
+      					</div>
+      				</div>
+            </div>
         </section>
 
         <section class="services-descripton">
@@ -124,14 +154,20 @@
           </div>
         </section>
 
-        <!--Карта-->
+        <section class="location">
+          <h2 class="visually-hidden">Мы на карте:</h2>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533248!2d30.32085871612592!3d59.93871648187619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2s!4v1616321381280!5m2!1sru!2s" width="1160" height="416" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <div class="container">
+              <div class="contacts">
+                <p class="contacts-heading">Nёrds design studio</p>
+                <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
+                <p>тел.<a class="contacts-phone" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
+                <a class="button contacts-button" href="#">Напишите нам</a>
+              </div>
+            </div>
+        </section>
 
-        <div class="contacts">
-          <p class="contacts-heading">Nёrds design studio</p>
-          <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
-          <p>тел.<a class="contacts-phone" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
-          <a class="button contacts-button" href="#">Напишите нам</a>
-        </div>
+
 
     </main>
 
