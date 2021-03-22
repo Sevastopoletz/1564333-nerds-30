@@ -54,10 +54,14 @@
   --input-hover: #B4B9BB;
   --input-focus: #000000;
 
+  --button-active-text: rgba(255,255,255,.3);
   --button-active-shadow: rgba(0, 1, 1, 0.1);
   --current-item-bg: rgba(0, 0, 0, 0.1);
   --response-shadow: rgba(0, 0, 0, 0.4);
   --catalog-item-hover-shadow: rgba(0, 0, 0, 0.25);
+  --cart-active: rgba(0, 0, 0, 0.3);
+  --filter-sort-hover: rgba(0, 0, 0, 0.6);
+
 }
 
 /* global */
@@ -134,7 +138,8 @@ h1 {
 
 .button:active,
 .catalog-item-popup .cost:active {
-  box-shadow: inset 0px 3px 0px var(--butto-active-shadow);
+  color: var(--button-active-text);
+  box-shadow: inset 0px 3px 0px var(--button-active-shadow);
   background-color: var(--button-dark-red);
   }
 
@@ -267,7 +272,7 @@ h1 {
   margin-right: 45px;
 }
 
-.main-header-logo:hover {
+.main-header-logo:hover img {
   opacity: 70%;
 }
 
@@ -306,14 +311,19 @@ h1 {
 }
 
 .main-header-logo:active,
-.site-nav-link:active,
-.cart-link:active {
+.site-nav-link:active,{
   color: var(--primary-text-color);
-  opacity: 30%;
+  opacity: 0.3;
 }
 
+.cart-link:active {
+  color: var(--cart-active);
+}
+
+.link-current,
 .site-nav-link:target,
 .cart-link:target {
+  padding-bottom: 18px;
   border-bottom: 2px solid var(--button-light-red);
 }
 
@@ -829,7 +839,7 @@ h1 {
 }
 
 .catalog-item img {
-  margin-top: -6px;
+  margin-top: -7px;
 }
 
 .catalog-item a:hover {
@@ -1024,11 +1034,13 @@ fieldset:last-of-type {
   opacity: 0.3;
 }
 
-.filter-sort-option:hover {
-  opacity:0.6;
+.filter-sort-option:hover a,{
+  opacity: 0.6;
 }
 
-.filter-sort-option .filter-sort-current {
+.filter-sort-option .filter-sort-current,
+.filter-sort-list:active a,{
+  color: var(--primary-text-color);
   opacity: 1;
 }
 
@@ -1053,15 +1065,27 @@ fieldset:last-of-type {
   background-size: contain;
 }
 
+.button-down:hover {
+  background: url(../img/icon-down-hover.svg);
+}
+
 .button-up {
   display: block;
   width: 11px;
   height: 10px;
   border: 0;
 
-  background: url(../img/icon-up.svg);
+  background: url(../img/icon-up-steady.svg);
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.button-up:hover {
+  background: url(../img/icon-up-hover.svg);
+}
+
+.button-up:active {
+  background: url(../img/icon-up.svg);
 }
 
 /* catalog-navigation */
