@@ -80,8 +80,6 @@
   font-weight: 400;
   color: var(--primary-text-color);
   background-color: var(--basic-white);
-
-  min-height: 100%;
 }
 
 main {
