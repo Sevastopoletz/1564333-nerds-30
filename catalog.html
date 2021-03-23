@@ -44,8 +44,15 @@
               <fieldset>
                 <legend class="filter-heading">Стоимость:</legend>
                   <div class="worth-range">
-                    <input type="range" name="worth" value="5000" min="0" max="15000" step="1000">
+                    <div class="range">
+                      <div class="range-scroll"></div>
+                    </div>
+                    <div class="range-radio" tabindex="0"></div>
+                    <div class="range-radio range-radio-right" tabindex="0"></div>
                   </div>
+                  <!-- <div class="worth-range">
+                    <input type="range" name="worth" value="5000" min="0" max="15000" step="1000">
+                  </div> -->
                   <div class="filter-cost">
                     <label>От&nbsp;<input type="text" name="min-price" value="0"></label>
                     <label>До&nbsp;<input type="text" name="max-price" value="15000"></label>
@@ -55,15 +62,15 @@
                 <legend class="filter-heading filter-heading-grid">Сетка:</legend>
                 <ul>
                 <li class="filter-option filter-grid">
-                  <input class="filter-input-radio" type="radio" name="grid" id="filter-adaptive" checked>
+                  <input class="filter-input-radio visually-hidden" type="radio" name="grid" id="filter-adaptive" checked>
                   <label for="filter-adaptive">Адаптивная</label>
                 </li>
                 <li class="filter-option filter-grid">
-                  <input class="filter-input-radio" type="radio" name="grid" id="filter-fixed">
+                  <input class="filter-input-radio visually-hidden" type="radio" name="grid" id="filter-fixed">
                   <label for="filter-fixed">Фиксированная</label>
                 </li>
                 <li class="filter-option filter-grid">
-                  <input class="filter-input-radio" type="radio" name="grid" id="filter-elastic">
+                  <input class="filter-input-radio visually-hidden" type="radio" name="grid" id="filter-elastic">
                   <label for="filter-elastic">Резиновая</label>
                 </li>
               </ul>
@@ -72,23 +79,23 @@
                 <legend class="filter-heading filter-heading-features">Особенности:</legend>
                 <ul>
                   <li class="filter-option filter-features">
-                    <input class="filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
+                    <input class="filter-input-checkbox visually-hidden" type="checkbox" name="slider" id="filter-slider" checked>
                     <label for="filter-slider">Слайдер</label>
                   </li>
                   <li class="filter-option filter-features">
-                    <input class="filter-input-checkbox" type="checkbox" name="advantages-module" id="filter-advantages-module">
+                    <input class="filter-input-checkbox visually-hidden" type="checkbox" name="advantages-module" id="filter-advantages-module">
                     <label for="filter-advantages-module">Блок преимуществ</label>
                   </li>
                   <li class="filter-option filter-features">
-                    <input class="filter-input-checkbox" type="checkbox" name="news" id="filter-news" checked>
+                    <input class="filter-input-checkbox visually-hidden" type="checkbox" name="news" id="filter-news" checked>
                     <label for="filter-news">Новости</label>
                   </li>
                   <li class="filter-option filter-features">
-                    <input class="filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
+                    <input class="filter-input-checkbox visually-hidden" type="checkbox" name="gallery" id="filter-gallery">
                     <label for="filter-gallery">Галерея</label>
                   </li>
                   <li class="filter-option filter-features">
-                    <input class="filter-input-checkbox" type="checkbox" name="cart" id="filter-cart">
+                    <input class="filter-input-checkbox visually-hidden" type="checkbox" name="cart" id="filter-cart">
                     <label for="filter-cart">Корзина</label>
                   </li>
                 </ul>
@@ -126,10 +133,7 @@
                 <ul class="catalog-list">
                   <li class="catalog-item">
                     <h3 class="visually-hidden">Туристический городок Седона</h3>
-                      <svg width="360" height="40" viewBox="0 0 360 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H356C358.2 0 360 1.8 360 4V40H0V4C0 1.8 1.8 0 4 0ZM16.9288 23.5C18.1792 25.6658 20.4901 27 22.991 27C26.857 27 29.991 23.866 29.991 20C29.991 16.134 26.857 13 22.991 13C20.4901 13 18.1792 14.3342 16.9288 16.5C15.6784 18.6658 15.6784 21.3342 16.9288 23.5ZM46.002 27C43.5011 27 41.1902 25.6658 39.9398 23.5C38.6893 21.3342 38.6893 18.6658 39.9398 16.5C41.1902 14.3342 43.5011 13 46.002 13C49.8679 13 53.002 16.134 53.002 20C53.002 23.866 49.8679 27 46.002 27ZM62.9508 23.5C64.2012 25.6658 66.5121 27 69.0129 27C72.8789 27 76.0129 23.866 76.0129 20C76.0129 16.134 72.8789 13 69.0129 13C66.5121 13 64.2012 14.3342 62.9508 16.5C61.7003 18.6658 61.7003 21.3342 62.9508 23.5Z" fill="#4D4D4D"/>
-                      </svg>
-                      <img src="img/catalog/catalog-sedona-1.jpg" alt="превью Седона" width="360" height="577">
+                      <img src="img/catalog/catalog-sedona-1.jpg" alt="превью Седона" width="358" height="577">
                       <div class="catalog-item-popup">
                         <h3 class="catalog-item-popup-heading">Sedona</h3>
                         <p class="catalog-item-popup-descripton">Информационный сайт<br> для туристов</p>
@@ -138,10 +142,7 @@
                   </li>
                   <li class="catalog-item">
                     <h3 class="visually-hidden">Приложение Пинк</h3>
-                    <svg width="360" height="40" viewBox="0 0 360 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H356C358.2 0 360 1.8 360 4V40H0V4C0 1.8 1.8 0 4 0ZM16.9288 23.5C18.1792 25.6658 20.4901 27 22.991 27C26.857 27 29.991 23.866 29.991 20C29.991 16.134 26.857 13 22.991 13C20.4901 13 18.1792 14.3342 16.9288 16.5C15.6784 18.6658 15.6784 21.3342 16.9288 23.5ZM46.002 27C43.5011 27 41.1902 25.6658 39.9398 23.5C38.6893 21.3342 38.6893 18.6658 39.9398 16.5C41.1902 14.3342 43.5011 13 46.002 13C49.8679 13 53.002 16.134 53.002 20C53.002 23.866 49.8679 27 46.002 27ZM62.9508 23.5C64.2012 25.6658 66.5121 27 69.0129 27C72.8789 27 76.0129 23.866 76.0129 20C76.0129 16.134 72.8789 13 69.0129 13C66.5121 13 64.2012 14.3342 62.9508 16.5C61.7003 18.6658 61.7003 21.3342 62.9508 23.5Z" fill="#4D4D4D"/>
-                    </svg>
-                    <img src="img/catalog/catalog-pink-1.jpg" alt="превью Пинк" width="360" height="578">
+                    <img src="img/catalog/catalog-pink-1.jpg" alt="превью Пинк" width="358" height="578">
                     <div class="catalog-item-popup">
                       <h3 class="catalog-item-popup-heading">Pink app</h3>
                       <p class="catalog-item-popup-descripton">Продуктовый лендинг приложения для iOS и Android</p>
@@ -150,10 +151,7 @@
                   </li>
                   <li class="catalog-item">
                     <h3 class="visually-hidden">Барбершоп Бородинский</h3>
-                    <svg width="360" height="40" viewBox="0 0 360 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H356C358.2 0 360 1.8 360 4V40H0V4C0 1.8 1.8 0 4 0ZM16.9288 23.5C18.1792 25.6658 20.4901 27 22.991 27C26.857 27 29.991 23.866 29.991 20C29.991 16.134 26.857 13 22.991 13C20.4901 13 18.1792 14.3342 16.9288 16.5C15.6784 18.6658 15.6784 21.3342 16.9288 23.5ZM46.002 27C43.5011 27 41.1902 25.6658 39.9398 23.5C38.6893 21.3342 38.6893 18.6658 39.9398 16.5C41.1902 14.3342 43.5011 13 46.002 13C49.8679 13 53.002 16.134 53.002 20C53.002 23.866 49.8679 27 46.002 27ZM62.9508 23.5C64.2012 25.6658 66.5121 27 69.0129 27C72.8789 27 76.0129 23.866 76.0129 20C76.0129 16.134 72.8789 13 69.0129 13C66.5121 13 64.2012 14.3342 62.9508 16.5C61.7003 18.6658 61.7003 21.3342 62.9508 23.5Z" fill="#4D4D4D"/>
-                    </svg>
-                    <img src="img/catalog/catalog-barbershop-1.jpg" alt="превью Бородинский" width="360" height="578">
+                    <img src="img/catalog/catalog-barbershop-1.jpg" alt="превью Бородинский" width="358" height="578">
                     <div class="catalog-item-popup">
                       <h3 class="catalog-item-popup-heading">Barbershop</h3>
                       <p class="catalog-item-popup-descripton">Сайт салона красоты. Для мужчин, да.</p>
@@ -162,10 +160,7 @@
                   </li>
                   <li class="catalog-item">
                     <h3 class="visually-hidden">Вязаные штуки Мишка</h3>
-                    <svg width="360" height="40" viewBox="0 0 360 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H356C358.2 0 360 1.8 360 4V40H0V4C0 1.8 1.8 0 4 0ZM16.9288 23.5C18.1792 25.6658 20.4901 27 22.991 27C26.857 27 29.991 23.866 29.991 20C29.991 16.134 26.857 13 22.991 13C20.4901 13 18.1792 14.3342 16.9288 16.5C15.6784 18.6658 15.6784 21.3342 16.9288 23.5ZM46.002 27C43.5011 27 41.1902 25.6658 39.9398 23.5C38.6893 21.3342 38.6893 18.6658 39.9398 16.5C41.1902 14.3342 43.5011 13 46.002 13C49.8679 13 53.002 16.134 53.002 20C53.002 23.866 49.8679 27 46.002 27ZM62.9508 23.5C64.2012 25.6658 66.5121 27 69.0129 27C72.8789 27 76.0129 23.866 76.0129 20C76.0129 16.134 72.8789 13 69.0129 13C66.5121 13 64.2012 14.3342 62.9508 16.5C61.7003 18.6658 61.7003 21.3342 62.9508 23.5Z" fill="#4D4D4D"/>
-                    </svg>
-                    <img src="img/catalog/catalog-mishka-1.jpg" alt="превью Мишка" width="360" height="578">
+                    <img src="img/catalog/catalog-mishka-1.jpg" alt="превью Мишка" width="358" height="578">
                     <div class="catalog-item-popup">
                       <h3 class="catalog-item-popup-heading">Mishka</h3>
                       <p class="catalog-item-popup-descripton">Интернет-магазин вязаных игрушек</p>
@@ -174,10 +169,7 @@
                   </li>
                   <li class="catalog-item">
                     <h3 class="visually-hidden">Курсы А Плюс</h3>
-                    <svg width="360" height="40" viewBox="0 0 360 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H356C358.2 0 360 1.8 360 4V40H0V4C0 1.8 1.8 0 4 0ZM16.9288 23.5C18.1792 25.6658 20.4901 27 22.991 27C26.857 27 29.991 23.866 29.991 20C29.991 16.134 26.857 13 22.991 13C20.4901 13 18.1792 14.3342 16.9288 16.5C15.6784 18.6658 15.6784 21.3342 16.9288 23.5ZM46.002 27C43.5011 27 41.1902 25.6658 39.9398 23.5C38.6893 21.3342 38.6893 18.6658 39.9398 16.5C41.1902 14.3342 43.5011 13 46.002 13C49.8679 13 53.002 16.134 53.002 20C53.002 23.866 49.8679 27 46.002 27ZM62.9508 23.5C64.2012 25.6658 66.5121 27 69.0129 27C72.8789 27 76.0129 23.866 76.0129 20C76.0129 16.134 72.8789 13 69.0129 13C66.5121 13 64.2012 14.3342 62.9508 16.5C61.7003 18.6658 61.7003 21.3342 62.9508 23.5Z" fill="#4D4D4D"/>
-                    </svg>
-                    <img src="img/catalog/catalog-aplus-1.jpg" alt="превью А Плюс" width="360" height="578">
+                    <img src="img/catalog/catalog-aplus-1.jpg" alt="превью А Плюс" width="358" height="578">
                     <div class="catalog-item-popup">
                       <h3 class="catalog-item-popup-heading">A Plus</h3>
                       <p class="catalog-item-popup-descripton">Лендинг курсов повышения квалификации</p>
@@ -186,10 +178,7 @@
                   </li>
                   <li class="catalog-item">
                     <h3 class="visually-hidden">Крафтовый квас Кваст</h3>
-                    <svg width="360" height="40" viewBox="0 0 360 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H356C358.2 0 360 1.8 360 4V40H0V4C0 1.8 1.8 0 4 0ZM16.9288 23.5C18.1792 25.6658 20.4901 27 22.991 27C26.857 27 29.991 23.866 29.991 20C29.991 16.134 26.857 13 22.991 13C20.4901 13 18.1792 14.3342 16.9288 16.5C15.6784 18.6658 15.6784 21.3342 16.9288 23.5ZM46.002 27C43.5011 27 41.1902 25.6658 39.9398 23.5C38.6893 21.3342 38.6893 18.6658 39.9398 16.5C41.1902 14.3342 43.5011 13 46.002 13C49.8679 13 53.002 16.134 53.002 20C53.002 23.866 49.8679 27 46.002 27ZM62.9508 23.5C64.2012 25.6658 66.5121 27 69.0129 27C72.8789 27 76.0129 23.866 76.0129 20C76.0129 16.134 72.8789 13 69.0129 13C66.5121 13 64.2012 14.3342 62.9508 16.5C61.7003 18.6658 61.7003 21.3342 62.9508 23.5Z" fill="#4D4D4D"/>
-                    </svg>
-                    <img src="img/catalog/catalog-kvast-1.jpg" alt="превью Кваст" width="360" height="578">
+                    <img src="img/catalog/catalog-kvast-1.jpg" alt="превью Кваст" width="358" height="578">
                     <div class="catalog-item-popup">
                       <h3 class="catalog-item-popup-heading">Кваст</h3>
                       <p class="catalog-item-popup-descripton">Промо-сайт производителя крафтового кваса</p>
