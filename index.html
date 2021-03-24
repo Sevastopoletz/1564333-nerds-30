@@ -168,14 +168,15 @@
           </div>
         </div>
       </footer>
-      <div class="response-popup">
+      <section class="response-popup">
         <p class="response-heading">Напишите нам</p>
         <form class="response-form" action="https://echo.htmlacademy.ru/" method="get">
-          <p><label>Ваше имя: <input type="text" name="response-username" placeholder="Имя фамилия"></label></p>
-          <p><label>Ваш email: <input type="email" name="response-email" placeholder="email@example.com"></label></p>
-          <p><label>Текст письма: <input type="text" name="response-text" placeholder="В свободной форме"></label></p>
+          <p class="response-item"><label>Ваше имя: <input class="response-cell" type="text" name="response-username" placeholder="Имя фамилия"></label></p>
+          <p class="response-item"><label>Ваш email: <input class="response-cell" type="email" name="response-email" placeholder="email@example.com"></label></p>
+          <p class="response-item"><label>Текст письма: <textarea class="response-text" type="text" name="response-text" placeholder="В свободной форме"></textarea></label></p>
           <p><input class="button button-response" type="submit"></p>
         </form>
-      </div>
+        <button class="response-close" type="button" aria-label="Закрыть"></button>
+      </section>
   </body>
 </html>
