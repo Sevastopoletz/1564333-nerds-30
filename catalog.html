@@ -5,8 +5,9 @@
     <title>Дизайн-студия «Нёрдс»: Каталог готовых шаблонов</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&;subset=latin,cyrillic;display=swap">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="stylesheet" href="css/style.min.css"> -->
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
@@ -43,19 +44,18 @@
             <form class="filter" action="https://echo.htmlacademy.ru/" method="get">
               <fieldset>
                 <legend class="filter-heading">Стоимость:</legend>
-                  <div class="worth-range">
-                    <div class="range">
-                      <div class="range-scroll"></div>
+                  <div class="container-worth">
+                    <div class="worth-range">
+                      <div class="range">
+                        <div class="range-scroll"></div>
+                      </div>
+                      <div class="range-radio" tabindex="0"></div>
+                      <div class="range-radio range-radio-right" tabindex="0"></div>
                     </div>
-                    <div class="range-radio" tabindex="0"></div>
-                    <div class="range-radio range-radio-right" tabindex="0"></div>
                   </div>
-                  <!-- <div class="worth-range">
-                    <input type="range" name="worth" value="5000" min="0" max="15000" step="1000">
-                  </div> -->
                   <div class="filter-cost">
                     <label>От&nbsp;<input type="text" name="min-price" value="0"></label>
-                    <label>До&nbsp;<input type="text" name="max-price" value="15000"></label>
+                    <label>До&nbsp;<input type="text" name="max-price" value="15 000"></label>
                   </div>
               </fieldset>
               <fieldset>
@@ -133,7 +133,7 @@
                 <ul class="catalog-list">
                   <li class="catalog-item">
                     <h3 class="visually-hidden">Туристический городок Седона</h3>
-                      <img src="img/catalog/catalog-sedona-1.jpg" alt="превью Седона" width="358" height="577">
+                      <img src="img/catalog/catalog-sedona-1.jpg" alt="превью Седона" width="360" height="577">
                       <div class="catalog-item-popup">
                         <h3 class="catalog-item-popup-heading">Sedona</h3>
                         <p class="catalog-item-popup-descripton">Информационный сайт<br> для туристов</p>
@@ -142,7 +142,7 @@
                   </li>
                   <li class="catalog-item">
                     <h3 class="visually-hidden">Приложение Пинк</h3>
-                    <img src="img/catalog/catalog-pink-1.jpg" alt="превью Пинк" width="358" height="578">
+                    <img src="img/catalog/catalog-pink-1.jpg" alt="превью Пинк" width="360" height="578">
                     <div class="catalog-item-popup">
                       <h3 class="catalog-item-popup-heading">Pink app</h3>
                       <p class="catalog-item-popup-descripton">Продуктовый лендинг приложения для iOS и Android</p>
@@ -151,7 +151,7 @@
                   </li>
                   <li class="catalog-item">
                     <h3 class="visually-hidden">Барбершоп Бородинский</h3>
-                    <img src="img/catalog/catalog-barbershop-1.jpg" alt="превью Бородинский" width="358" height="578">
+                    <img src="img/catalog/catalog-barbershop-1.jpg" alt="превью Бородинский" width="360" height="578">
                     <div class="catalog-item-popup">
                       <h3 class="catalog-item-popup-heading">Barbershop</h3>
                       <p class="catalog-item-popup-descripton">Сайт салона красоты. Для мужчин, да.</p>
@@ -160,7 +160,7 @@
                   </li>
                   <li class="catalog-item">
                     <h3 class="visually-hidden">Вязаные штуки Мишка</h3>
-                    <img src="img/catalog/catalog-mishka-1.jpg" alt="превью Мишка" width="358" height="578">
+                    <img src="img/catalog/catalog-mishka-1.jpg" alt="превью Мишка" width="360" height="578">
                     <div class="catalog-item-popup">
                       <h3 class="catalog-item-popup-heading">Mishka</h3>
                       <p class="catalog-item-popup-descripton">Интернет-магазин вязаных игрушек</p>
@@ -169,7 +169,7 @@
                   </li>
                   <li class="catalog-item">
                     <h3 class="visually-hidden">Курсы А Плюс</h3>
-                    <img src="img/catalog/catalog-aplus-1.jpg" alt="превью А Плюс" width="358" height="578">
+                    <img src="img/catalog/catalog-aplus-1.jpg" alt="превью А Плюс" width="360" height="578">
                     <div class="catalog-item-popup">
                       <h3 class="catalog-item-popup-heading">A Plus</h3>
                       <p class="catalog-item-popup-descripton">Лендинг курсов повышения квалификации</p>
@@ -178,7 +178,7 @@
                   </li>
                   <li class="catalog-item">
                     <h3 class="visually-hidden">Крафтовый квас Кваст</h3>
-                    <img src="img/catalog/catalog-kvast-1.jpg" alt="превью Кваст" width="358" height="578">
+                    <img src="img/catalog/catalog-kvast-1.jpg" alt="превью Кваст" width="360" height="578">
                     <div class="catalog-item-popup">
                       <h3 class="catalog-item-popup-heading">Кваст</h3>
                       <p class="catalog-item-popup-descripton">Промо-сайт производителя крафтового кваса</p>
@@ -212,7 +212,7 @@
               <div class="contacts">
                 <p class="contacts-heading">Nёrds design studio</p>
                 <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
-                <p>тел.<a class="contacts-phone" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
+                <p class="container-phone">тел.<a class="contacts-phone" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
                 <a class="button contacts-button" href="#">Напишите нам</a>
               </div>
             </div>
